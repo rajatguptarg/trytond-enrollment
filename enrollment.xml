@@ -1,5 +1,74 @@
 <?xml version="1.0"?>
 <tryton>
     <data>
+        <record model="ir.ui.view" id="party_view_form">
+           <field name="model">party.party</field>
+           <field name="inherit" ref="party.party_view_form"/>
+           <field name="name">party_form</field>
+       </record>
+        <record model="ir.ui.view" id="allergy_view_tree">
+            <field name="model">party.allergy</field>
+            <field name="type">tree</field>
+            <field name="name">allergy_tree</field>
+        </record>
+        <record model="ir.ui.view" id="allergy_view_form">
+            <field name="model">party.allergy</field>
+            <field name="type">form</field>
+            <field name="name">allergy_form</field>
+        </record>
+        <record model="ir.ui.view" id="disease_view_tree">
+            <field name="model">party.disease</field>
+            <field name="type">tree</field>
+            <field name="name">disease_tree</field>
+        </record>
+        <record model="ir.ui.view" id="disease_view_form">
+            <field name="model">party.disease</field>
+            <field name="type">form</field>
+            <field name="name">disease_form</field>
+        </record>
+        <record model="ir.ui.view" id="occupation_view_tree">
+            <field name="model">party.occupation</field>
+            <field name="type">tree</field>
+            <field name="name">occupation_tree</field>
+        </record>
+        <record model="ir.ui.view" id="occupation_view_form">
+            <field name="model">party.occupation</field>
+            <field name="type">form</field>
+            <field name="name">occupation_form</field>
+        </record>
+        <record model="ir.ui.view" id="mediaction_view_tree">
+            <field name="model">party.mediaction</field>
+            <field name="type">tree</field>
+            <field name="name">mediaction_tree</field>
+        </record>
+        <record model="ir.ui.view" id="mediaction_view_form">
+            <field name="model">party.mediaction</field>
+            <field name="type">form</field>
+            <field name="name">mediaction_form</field>
+        </record>
+        <record model="ir.ui.view" id="familydetail_view_tree">
+            <field name="model">party.familydetail</field>
+            <field name="type">tree</field>
+            <field name="inherit" ref="party.party_view_tree"/>
+            <field name="name">familydetail_tree</field>
+        </record>
+        <record model="ir.ui.view" id="familydetail_view_form">
+            <field name="model">party.familydetail</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="party.party_view_form"/>
+            <field name="name">familydetail_form</field>
+        </record>
+        <record model="ir.ui.view" id="medicaldetail_view_tree">
+            <field name="model">party.medicaldetail</field>
+            <field name="type">tree</field>
+            <field name="inherit" ref="party.party_view_tree"/>
+            <field name="name">medicaldetail_tree</field>
+        </record>
+        <record model="ir.ui.view" id="medicaldetail_view_form">
+            <field name="model">party.medicaldetail</field>
+            <field name="type">form</field>
+            <field name="inherit" ref="party.party_view_form"/>
+            <field name="name">medicaldetail_form</field>
+        </record>
     </data>
 </tryton>
